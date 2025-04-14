@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>AutoMotriz - Concesionario de Vehículos</title>
+</head>
+<body>
+    <!-- Header con logo, barra de búsqueda y redes sociales -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="/api/placeholder/40/40" alt="Logo AutoMotriz">
+                    <h1>AutoMotriz</h1>
+                </div>
+                <div class="search-social">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar vehículos...">
+                        <button type="submit">Buscar</button>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" title="Facebook">FB</a>
+                        <a href="#" title="Twitter">TW</a>
+                        <a href="#" title="Instagram">IG</a>
+                        <a href="#" title="YouTube">YT</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navegación -->
+            <nav>
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Vehículos Nuevos</a></li>
+                    <li><a href="#">Vehículos Usados</a></li>
+                    <li><a href="#">Financiamiento</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Búsqueda avanzada -->
+        <section class="advanced-search">
+            <h2>Búsqueda Avanzada</h2>
+            <form>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label for="price">Rango de Precio</label>
+                        <select id="price">
+                            <option value="">Todos los precios</option>
+                            <option value="10000-20000">$10,000 - $20,000</option>
+                            <option value="20000-30000">$20,000 - $30,000</option>
+                            <option value="30000-40000">$30,000 - $40,000</option>
+                            <option value="40000+">$40,000+</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="location">Ubicación</label>
+                        <select id="location">
+                            <option value="">Todas las ubicaciones</option>
+                            <option value="norte">Zona Norte</option>
+                            <option value="sur">Zona Sur</option>
+                            <option value="este">Zona Este</option>
+                            <option value="oeste">Zona Oeste</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="brand">Marca</label>
+                        <select id="brand">
+                            <option value="">Todas las marcas</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="honda">Honda</option>
+                            <option value="ford">Ford</option>
+                            <option value="chevrolet">Chevrolet</option>
+                            <option value="nissan">Nissan</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="model">Modelo</label>
+                        <select id="model">
+                            <option value="">Todos los modelos</option>
+                            <option value="sedan">Sedán</option>
+                            <option value="suv">SUV</option>
+                            <option value="hatchback">Hatchback</option>
+                            <option value="pickup">Pickup</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="year">Año</label>
+                        <select id="year">
+                            <option value="">Todos los años</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-buttons">
+                    <button type="submit" class="search-btn">Buscar</button>
+                    <button type="reset" class="reset-btn">Limpiar filtros</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Noticias y anuncios -->
+        <section class="news-section">
+            <h2>Noticias y Anuncios</h2>
+            <div class="news-container">
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="/api/placeholder/300/150" alt="Noticia 1">
+                    </div>
+                    <div class="news-content">
+                        <h3>Nuevo modelo 2025</h3>
+                        <p>Descubre el nuevo modelo con tecnología híbrida y mayor autonomía.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="/api/placeholder/300/150" alt="Noticia 2">
+                    </div>
+                    <div class="news-content">
+                        <h3>Promoción de Primavera</h3>
+                        <p>Aprovecha nuestras ofertas especiales con financiamiento a 0% de interés.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="/api/placeholder/300/150" alt="Noticia 3">
+                    </div>
+                    <div class="news-content">
+                        <h3>Servicio Premium</h3>
+                        <p>Conoce nuestro nuevo programa de mantenimiento con beneficios exclusivos.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resultados de búsqueda -->
+        <section class="search-results">
+            <h2>Vehículos Destacados</h2>
+            <div class="results-container">
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="/api/placeholder/280/180" alt="Vehículo 1">
+                    </div>
+                    <div class="car-content">
+                        <h3>Toyota Corolla 2024</h3>
+                        <div class="car-specs">
+                            <p>1.8L • Automático • 5,000 km</p>
+                        </div>
+                        <div class="car-price">$25,990</div>
+                        <div class="car-buttons">
+                            <button class="details-btn">Ver detalles</button>
+                            <button class="contact-btn">Contactar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="/api/placeholder/280/180" alt="Vehículo 2">
+                    </div>
+                    <div class="car-content">
+                        <h3>Honda CR-V 2023</h3>
+                        <div class="car-specs">
+                            <p>2.0L • Automático • 15,000 km</p>
+                        </div>
+                        <div class="car-price">$29,500</div>
+                        <div class="car-buttons">
+                            <button class="details-btn">Ver detalles</button>
+                            <button class="contact-btn">Contactar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="/api/placeholder/280/180" alt="Vehículo 3">
+                    </div>
+                    <div class="car-content">
+                        <h3>Ford Escape 2024</h3>
+                        <div class="car-specs">
+                            <p>2.5L • Automático • 8,000 km</p>
+                        </div>
+                        <div class="car-price">$27,850</div>
+                        <div class="car-buttons">
+                            <button class="details-btn">Ver detalles</button>
+                            <button class="contact-btn">Contactar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="/api/placeholder/280/180" alt="Vehículo 4">
+                    </div>
+                    <div class="car-content">
+                        <h3>Chevrolet Silverado 2023</h3>
+                        <div class="car-specs">
+                            <p>5.3L • Automático • 12,000 km</p>
+                        </div>
+                        <div class="car-price">$38,990</div>
+                        <div class="car-buttons">
+                            <button class="details-btn">Ver detalles</button>
+                            <button class="contact-btn">Contactar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="/api/placeholder/280/180" alt="Vehículo 5">
+                    </div>
+                    <div class="car-content">
+                        <h3>Nissan Rogue 2024</h3>
+                        <div class="car-specs">
+                            <p>2.5L • Automático • 3,000 km</p>
+                        </div>
+                        <div class="car-price">$26,790</div>
+                        <div class="car-buttons">
+                            <button class="details-btn">Ver detalles</button>
+                            <button class="contact-btn">Contactar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="/api/placeholder/280/180" alt="Vehículo 6">
+                    </div>
+                    <div class="car-content">
+                        <h3>Mazda CX-5 2023</h3>
+                        <div class="car-specs">
+                            <p>2.5L • Automático • 7,500 km</p>
+                        </div>
+                        <div class="car-price">$28,450</div>
+                        <div class="car-buttons">
+                            <button class="details-btn">Ver detalles</button>
+                            <button class="contact-btn">Contactar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Acerca de Nosotros</h3>
+                    <ul>
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="#">Misión y Visión</a></li>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Trabaja con Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Venta de Vehículos</a></li>
+                        <li><a href="#">Financiamiento</a></li>
+                        <li><a href="#">Seguros</a></li>
+                        <li><a href="#">Mantenimiento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Ayuda</h3>
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Mapa del Sitio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>Dirección: Av. Principal #123</li>
+                        <li>Teléfono: (123) 456-7890</li>
+                        <li>Email: info@automotriz.com</li>
+                        <li>Horario: Lun-Sáb 9:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoMotriz. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    </script>
+</body>
+</html>
